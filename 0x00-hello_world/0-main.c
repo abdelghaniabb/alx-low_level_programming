@@ -1,2 +1,2 @@
-#inlude < stio.h >
-int main(void){printf('hello'); }
+#include <stdio.h>
+int main(void){return (0); }
