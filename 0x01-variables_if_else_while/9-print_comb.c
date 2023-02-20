@@ -13,8 +13,11 @@ j = ',';
 while (i <= '9')
 {
 putchar(i);
+if (i != '9')
+{
 putchar(j);
 putchar(' ');
+}
 i++;
 }
 putchar('\n');
