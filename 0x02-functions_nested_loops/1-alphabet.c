@@ -1,17 +1,21 @@
 #include <stdio.h>
-/**
- * main - Entry point
- *
- * Return: Always 0 (Success)
- */
-int print_alphabet(void);
+#include "main.h"
 
+/**
+ * main - check the code
+ *
+ * Return: Always 0.
+ */
 int main(void)
 {
-printf("%d", print_alphabet());
+print_alphabet();
 return (0);
 }
-
+/**
+ * print_alphabet - check the code
+ *
+ * Return: Always 0.
+ */
 int print_alphabet(void)
 {
 char ch = 'a';
