@@ -5,10 +5,10 @@
  *
  * Return: Always 0.
  */
-int print_alphabet(void);
+
 int main(void)
 {
-printf("%d", print_alphabet());
+print_alphabet();
 return (0);
 }
 /**
@@ -16,14 +16,13 @@ return (0);
  *
  * Return: Always 0.
  */
-int print_alphabet(void)
+void print_alphabet(void)
 {
 char ch = 'a';
 while (ch <= 'z')
 {
-putchar(ch);
+_putchar(ch);
 ch++;
 }
-putchar('\n');
-return (0);
+_putchar('\n');
 }
