@@ -1,10 +1,10 @@
 #include "main.h"
-#
+
 /**
- * reset_to_98 - reset to 98
+ * reset_to_98 - check the code
  *
- * Return: void
- * @param *n adress of n
+ * Return: Always 0.
+ * @n: hjhb
  */
 void reset_to_98(int *n)
 {
