@@ -25,6 +25,6 @@ break;
 }
 s++;
 }
-int tot = sign *result;
-return (tot);
+
+return (sign *result);
 }
