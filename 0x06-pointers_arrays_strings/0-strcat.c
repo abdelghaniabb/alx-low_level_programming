@@ -30,6 +30,6 @@ j++;
 /* Add the terminating null byte */
 dest[i] = '\0';
 
-return dest;
+return (dest);
 }
 
