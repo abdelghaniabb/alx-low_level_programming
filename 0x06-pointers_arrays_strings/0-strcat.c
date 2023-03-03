@@ -9,23 +9,27 @@
  */
 char *_strcat(char *dest, char *src)
 {
-int i = 0;
-int len1 = strlen(dest);
-int len2 = strlen(src);
-char ptr[len1 + len2];
-while (i < len1)
+int i, j;
+
+/* Find the end of the destination string */
+i = 0;
+while (dest[i] != '\0')
 {
-ptr[i] = dest[i];
 i++;
 }
-int j = i;
-int i1 = 0;
-while (i1 < len2)
+
+/* Copy the source string to the end of the destination string */
+j = 0;
+while (src[j] != '\0')
 {
-ptr[j] = src[i1];
+dest[i] = src[j];
+i++;
 j++;
-i1++;
 }
-printf("%s", ptr);
-return (src);
+
+/* Add the terminating null byte */
+dest[i] = '\0';
+
+return dest;
 }
+
