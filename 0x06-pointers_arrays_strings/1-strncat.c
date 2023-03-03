@@ -21,23 +21,11 @@ i++;
 
 /* Copy the source string to the end of the destination string */
 j = 0;
-if (n >= strlen(src))
-{
-while (src[j] != '\0')
+while (j < n && src[j] != '\0')
 {
 dest[i] = src[j];
 i++;
 j++;
-}
-}
-else
-{
-while (j < n)
-{
-dest[i] = src[j];
-i++;
-j++;
-}
 }
 
 /* Add the terminating null byte */
