@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <string.h>
 /**
- * leet - encrupt
+ * rot13 - encrupt
  * @str: string
  * Return: code string
  */
