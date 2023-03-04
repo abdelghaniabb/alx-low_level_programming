@@ -21,5 +21,5 @@ int _islower(int c)
 	{
 		printf("%d", 0);
 	}
-	return (0);
+	return (void);
 }
