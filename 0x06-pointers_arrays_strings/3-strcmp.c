@@ -1,8 +1,8 @@
 #include "main.h"
 /**
  * _strcmp - copies a string
- * @dest: the destination string
- * @src: the source string
+ * @s1: the destination string
+ * @s2: the source string
  *
  * Return: pointer to the destination string
  */
