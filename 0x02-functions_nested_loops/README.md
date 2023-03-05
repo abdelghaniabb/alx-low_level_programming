@@ -35,7 +35,12 @@ Write a function that prints every minute of the day of Jack Bauer, starting fro
 Prototype: void jack_bauer(void);
 
 ## 9-times_table.c 
-10-add.c 
+
+Write a function that prints the 9 times table, starting with 0.
+
+Prototype: void times_table(void);
+
+## 10-add.c 
 11-print_to_98.c 
 
 100-
