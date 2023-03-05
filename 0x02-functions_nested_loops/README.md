@@ -5,8 +5,17 @@
 2-print_alphabet_x10.c 
 3-islower.c 
 4-isalpha.c 
-5-sign.c 
-6-abs.c 
+## 5-sign.c 
+
+Write a function that prints the sign of a number.
+
+Prototype: int print_sign(int n);
+Returns 1 and prints + if n is greater than zero
+Returns 0 and prints 0 if n is zero
+Returns -1 and prints - if n is less than zero
+
+## 6-abs.c 
+
 7-print_last_digit.c 
 8-24_hours.c 
 9-times_table.c 
