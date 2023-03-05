@@ -19,4 +19,5 @@ int main(void)
 		i++;
 	}
 	printf("%d\n", s);
+	return (0);
 }
