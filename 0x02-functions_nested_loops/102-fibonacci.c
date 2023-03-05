@@ -25,7 +25,7 @@ int main(void)
 		}
 		else
 		{
-		printf("%ld", n1);
+		printf("%ld\n", n1);
 		}
 		i++;
 	}
