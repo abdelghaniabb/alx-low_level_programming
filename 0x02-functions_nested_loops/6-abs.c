@@ -2,7 +2,7 @@
 
 /**
  * _abs - check code
- *
+ * @c: int
  * Return: 0
  */
 int _abs(int c)
