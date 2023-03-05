@@ -16,7 +16,12 @@ Returns -1 and prints - if n is less than zero
 
 ## 6-abs.c 
 
-7-print_last_digit.c 
+Write a function that computes the absolute value of an integer.
+
+Prototype: int _abs(int);
+FYI: The standard library provides a similar function: abs. Run man abs to learn more.
+
+## 7-print_last_digit.c 
 8-24_hours.c 
 9-times_table.c 
 10-add.c 
