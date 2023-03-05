@@ -7,10 +7,11 @@
  */
 void jack_bauer(void)
 {
-int h = 0;
-int m = 0;
+int h, m;
+h = 0;
 while (h < 24)
 {
+	m = 0;
 	while (m < 60)
 	{
 		printf("%02d:%02d\n", h, m);
