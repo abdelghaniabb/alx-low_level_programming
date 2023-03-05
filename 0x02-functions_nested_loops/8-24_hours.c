@@ -13,7 +13,7 @@ while (h < 24)
 {
 	while (m < 60)
 	{
-		printf("%02:%02\n", h, m);
+		printf("%02d:%02d\n", h, m);
 		m++;
 	}
 	h++;
