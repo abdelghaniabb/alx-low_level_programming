@@ -21,3 +21,15 @@ finish
 3-print_remaining_days.c
 
 ## 0x04. C - More functions, more nested loops
+9-fizz_buzz.c
+
+100-prime_factor.c
+
+101-print_number.c
+
+## 0x05. C - Pointers, arrays and strings
+5-rev_string.c
+
+100-atoi.c
+
+101-keygen.c

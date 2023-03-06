@@ -8,12 +8,13 @@
 void rev_string(char *s)
 {
 	int len = strlen(s);
-	int i = len - 1;
-
+	int i = len - 1, j = 0;
+	char st[] = s[];
 	while (i >= 0)
 	{
-		printf("%c", s[i]);
+		s[j] = st[i];
+		j++;
 		i--;
 	}
-	printf("\n");
+
 }
