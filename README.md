@@ -33,3 +33,5 @@ finish
 100-atoi.c
 
 101-keygen.c
+
+## 0x06. C - More pointers, arrays and strings
