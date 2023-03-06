@@ -16,3 +16,8 @@ finish
 103-fibonacci.c
 
 104-fibonacci.c
+
+## 0x03. C - Debugging
+3-print_remaining_days.c
+
+## 0x04. C - More functions, more nested loops
