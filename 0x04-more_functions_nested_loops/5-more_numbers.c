@@ -5,14 +5,21 @@
  */
 void more_numbers(void)
 {
-	int i, j, k;
+	int i;
+	char j, k;
 
 	for (i = 0; i <= 10; i++)
 	{
-		for (j = 0; j <= 14; j++)
+		for (j = '0'; j <= '9'; j++)
 		{
-			printf("%d", j);
+			putchar(j);
 		}
+		for (k = '0'; k <= '4'; k++)
+		{
+			putchar('1');
+			putchar(k);
+		}
+
 		printf("\n");
 	}
 }
