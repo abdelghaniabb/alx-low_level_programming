@@ -13,5 +13,5 @@ void print_numbers(void)
 		putchar(i);
 		i++;
 	}
-	printf("$\n");
+	printf("\n");
 }
