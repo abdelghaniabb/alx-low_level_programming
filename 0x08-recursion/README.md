@@ -33,3 +33,10 @@ Write a function that returns the natural square root of a number.
 
 - Prototype: int _sqrt_recursion(int n);
 - If n does not have a natural square root, the function should return -1
+
+## 100-is_palindrome.c
+
+Write a function that returns 1 if a string is a palindrome and 0 if not.
+
+- Prototype: int is_palindrome(char *s);
+- An empty string is a palindrome

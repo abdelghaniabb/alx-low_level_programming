@@ -35,3 +35,16 @@ finish
 101-keygen.c
 
 ## 0x06. C - More pointers, arrays and strings
+
+## 0x08. C - Recursion
+1-print_rev_recursion.c
+
+2-strlen_recursion.c
+
+5-sqrt_recursion.c
+
+6-is_prime_number.c
+
+100-is_palindrome.c
+
+101-wildcmp.c
