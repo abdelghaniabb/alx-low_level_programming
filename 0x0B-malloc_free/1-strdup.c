@@ -12,9 +12,9 @@ char *_strdup(char *str)
 	char *new_str;
 
 	if (str == NULL)
-        {
-                return (NULL);
-        }
+	{
+		return (NULL);
+	}
 
 	size = strlen(str) + 1;
 	new_str = (char *) malloc(size * sizeof(char));
