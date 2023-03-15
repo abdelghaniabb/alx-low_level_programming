@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+
 /**
  * main - check code
  * @argv: An array containing the program command line arguments
@@ -18,4 +19,5 @@ int main(int argc, char **argv)
 	}
 	res = atoi(argv[1]) * atoi(argv[2]);
 	printf("%d\n", res);
+	return (0);
 }
