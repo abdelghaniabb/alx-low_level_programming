@@ -8,6 +8,7 @@
 void *malloc_checked(unsigned int b)
 {
 	void *ptr = (void *)malloc(b);
+
 	if (ptr == NULL)
 	{
 		perror("malloc");
