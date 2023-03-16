@@ -1,0 +1,5 @@
+ar rcs libay.a *.o
+gcc -c *.c
+
+gcc -o main main.o -L. libmy.a
+ar rcs libmy.a *.o
