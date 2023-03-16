@@ -2,7 +2,8 @@
 #include <stdlib.h>
 /**
  * main - check the code for ALX School students.
- *
+ * @argc: var
+ * @argv: var
  * Return: Always 0.
  */
 int main(int argc, char **argv)
