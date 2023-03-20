@@ -48,3 +48,8 @@ finish
 100-is_palindrome.c
 
 101-wildcmp.c
+
+
+## 0x0A. C - argc, argv
+
+100-change.c
