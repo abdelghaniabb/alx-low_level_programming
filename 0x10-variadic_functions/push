@@ -1,0 +1,5 @@
+echo how would you like to commit:
+read c
+git add .
+git commit -m $c
+git push
