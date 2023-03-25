@@ -35,23 +35,18 @@ finish
 101-keygen.c
 
 ## 0x06. C - More pointers, arrays and strings
-
+# Month 1
 ## 0x08. C - Recursion
-1-print_rev_recursion.c
-
-2-strlen_recursion.c
-
-5-sqrt_recursion.c
-
-6-is_prime_number.c
-
-100-is_palindrome.c
-
-101-wildcmp.c
-
+finish
+(101-wildcmp.c)
+## 0x09. C - Static libraries
+libmy.a, main.h
 
 ## 0x0A. C - argc, argv
+finish
+(100-change.c)
 
-100-change.c
+## 0x0B. C - malloc, free
+## 0x10. C - Variadic functions
 
-## Variadic functions
+
