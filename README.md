@@ -47,6 +47,9 @@ finish
 (100-change.c)
 
 ## 0x0B. C - malloc, free
+finish (100-argstostr.c)
+
+101-strtow.c
 ## 0x10. C - Variadic functions
 
 
