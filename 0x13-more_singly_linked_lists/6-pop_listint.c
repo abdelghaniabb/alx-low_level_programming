@@ -3,7 +3,7 @@
 /**
  * pop_listint - delete the first node of the list
  * @head: the head of the list
- * Retuen: int
+ * Return: int
  */
 int pop_listint(listint_t **head)
 {
@@ -11,7 +11,7 @@ int pop_listint(listint_t **head)
 	int n;
 
 	if (head == NULL)
-		return(0);
+		return (0);
 
 	h = *head;
 	*head = h->next;
