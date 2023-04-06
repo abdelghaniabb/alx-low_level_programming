@@ -53,3 +53,9 @@ finish (100-argstostr.c)
 ## 0x10. C - Variadic functions
 
 
+## 0x13. C - More singly linked lists
+
+- 101-print_listint_safe.c
+- 102-free_listint_safe.c
+- 103-find_loop.c
+
