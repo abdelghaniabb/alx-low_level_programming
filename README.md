@@ -51,6 +51,7 @@ finish (100-argstostr.c)
 
 101-strtow.c
 ## 0x10. C - Variadic functions
+## 0x11. C - _printf_
 
 ## 0x12. C - Singly linked lists
 
