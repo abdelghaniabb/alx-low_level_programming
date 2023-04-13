@@ -1,6 +1,7 @@
 #include <unistd.h>
 #include <fcntl.h>
 #include <stdlib.h>
+#include "main.h"
 /**
  * read_textfile - read file
  * @filename: name of the file to open
