@@ -9,7 +9,12 @@
 
 void print_error_and_exit(int error_code, const char *error_message);
 void close_file_and_exit(int error_code, int fd);
-
+/**
+ * main - check code
+ * @argc: number of arg
+ * @argv: list of arg
+ * Return: 0
+*/
 int main(int argc, char *argv[])
 {
 	char *file_from;
@@ -18,6 +23,7 @@ int main(int argc, char *argv[])
 	int fd_to;
 	char buffer[BUF_SIZE];
 	ssize_t bytes_read, bytes_written;
+	int perm;
 
 	if (argc != 3)
 	{
@@ -32,7 +38,8 @@ int main(int argc, char *argv[])
 	if (fd_from == -1)
 		print_error_and_exit(98, strerror(errno));
 
-	fd_to = open(file_to, O_WRONLY | O_CREAT | O_TRUNC, S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH);
+	perm = S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH;
+	fd_to = open(file_to, O_WRONLY | O_CREAT | O_TRUNC, perm);
 	if (fd_to == -1)
 		close_file_and_exit(99, fd_from);
 
@@ -61,12 +68,24 @@ int main(int argc, char *argv[])
 	return (0);
 }
 
+/**
+ * print_error_and_exit - print error
+ * @error_code: error
+ * @error_message: error
+ * Return: void
+ */
 void print_error_and_exit(int error_code, const char *error_message)
 {
 	dprintf(STDERR_FILENO, "Error: %s\n", error_message);
 	exit(error_code);
 }
 
+/**
+ * close_file_and_exit - close file
+ * @error_code: error
+ * @fd: file discriptor
+ * Return: void
+ */
 void close_file_and_exit(int error_code, int fd)
 {
 	if (close(fd) == -1)
