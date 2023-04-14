@@ -4,7 +4,7 @@
 /**
  * append_text_to_file - add elements to an exixting file
  * @filename: the name of the file
- * @tect_content: the text to add
+ * @text_content: the text to add
  * Return: 1 or -1
  */
 int append_text_to_file(const char *filename, char *text_content)
