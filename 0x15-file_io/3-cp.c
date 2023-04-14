@@ -39,7 +39,7 @@ int main(int argc, char *argv[])
 		print_error_and_exit(98, strerror(errno));
 
 	perm = S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH;
-	fd_to = open(file_to, O_WRONLY | O_CREAT | O_TRUNC, perm);
+	fd_to = open(file_to, O_WRONLY | O_CREAT | O_TRUNC, S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH);
 	if (fd_to == -1)
 		close_file_and_exit(99, fd_from);
 
