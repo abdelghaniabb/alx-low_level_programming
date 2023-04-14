@@ -1,25 +1,34 @@
 #include <unistd.h>
 #include <fcntl.h>
 #include <string.h>
-#include <errno.h>
+/**
+ * append_text_to_file - add elements to an exixting file
+ * @filename: the name of the file
+ * @tect_content: the text to add
+ * Return: 1 or -1
+ */
+int append_text_to_file(const char *filename, char *text_content)
+{
+	int fileD;
+	ssize_t textLength;
+	ssize_t bytesWritten;
 
-int append_text_to_file(const char *filename, char *text_content) {
-    if (filename == NULL)
-        return -1; // Return -1 if filename is NULL
+	if (filename == NULL)
+		return (-1);
 
-    if (text_content == NULL)
-        return 1; // Return 1 if text_content is NULL (nothing to append)
+	if (text_content == NULL)
+	return (1);
 
-    int fd = open(filename, O_WRONLY | O_APPEND); // Open the file in append mode
-    if (fd == -1)
-        return -1; // Return -1 if file could not be opened
+	fileD = open(filename, O_WRONLY | O_APPEND);
+	if (fileD == -1)
+		return (-1);
 
-    size_t text_len = strlen(text_content);
-    ssize_t bytes_written = write(fd, text_content, text_len); // Write text_content to the end of the file
-    close(fd); // Close the file descriptor
+	textLength = strlen(text_content);
+	bytesWritten = write(fileD, text_content, textLength);
+	close(fileD);
 
-    if (bytes_written != text_len)
-        return -1; // Return -1 if not all bytes were written successfully
+	if (bytesWritten != textLength)
+		return (-1);
 
-    return 1; // Return 1 on success
+	return (1);
 }
