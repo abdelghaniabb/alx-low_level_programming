@@ -23,7 +23,7 @@ int main(int argc, char *argv[])
 	int fd_to;
 	char buffer[BUF_SIZE];
 	ssize_t bytes_read, bytes_written;
-	int perm;
+	mode_t perm;
 
 	if (argc != 3)
 	{
