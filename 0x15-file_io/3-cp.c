@@ -23,6 +23,7 @@ int main(int argc, char *argv[])
 	int fd_to;
 	char buffer[BUF_SIZE];
 	ssize_t bytes_read, bytes_written;
+	mode_t mode = S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH;
 
 	if (argc != 3)
 	{
@@ -37,7 +38,7 @@ int main(int argc, char *argv[])
 	if (fd_from == -1)
 		print_error_and_exit(98, strerror(errno));
 
-	fd_to = open(file_to, O_WRONLY | O_CREAT | O_TRUNC, S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH);
+	fd_to = open(file_to, O_WRONLY | O_CREAT | O_TRUNC, mode);
 	if (fd_to == -1)
 		close_file_and_exit(99, fd_from);
 
