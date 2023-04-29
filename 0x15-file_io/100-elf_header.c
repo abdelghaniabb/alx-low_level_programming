@@ -35,9 +35,18 @@ void switch1(unsigned char *c)
 		case ELFOSABI_NETBSD:
 			printf("UNIX - NetBSD\n");
 			break;
-		case ELFOSABI_STANDALONE:
-			printf("Standalone (embedded) application\n");
+		case ELFOSABI_SOLARIS:
+			printf("UNIX - Solaris\n");
 			break;
+		case ELFOSABI_LINUX:
+			printf("UNIX - Linux\n");
+			break;
+		case ELFOSABI_FREEBSD:
+			printf("UNIX - FreeBSD\n");
+			break;
+/*case ELFOSABI_STANDALONE:*/
+/*			printf("Standalone (embedded) application\n");*/
+/*			break;*/
 		default:
 			printf("Unknown\n");
 			break;
