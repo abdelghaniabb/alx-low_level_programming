@@ -44,9 +44,9 @@ void switch1(unsigned char *c)
 		case ELFOSABI_FREEBSD:
 			printf("UNIX - FreeBSD\n");
 			break;
-/*case ELFOSABI_STANDALONE:*/
-/*			printf("Standalone (embedded) application\n");*/
-/*			break;*/
+		case ELFOSABI_STANDALONE:
+			printf("Standalone (embedded) application\n");
+			break;
 		default:
 			printf("Unknown\n");
 			break;
@@ -65,7 +65,7 @@ void switch2(Elf64_Half *c)
 			printf("Relocatable file\n");
 			break;
 		case ET_EXEC:
-			printf("Executable file\n");
+			printf("EXEC (Executable file)\n");
 			break;
 		case ET_DYN:
 			printf("Shared object file\n");
