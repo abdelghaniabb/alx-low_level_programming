@@ -32,6 +32,9 @@ void switch1(unsigned char *c)
 		case ELFOSABI_HPUX:
 			printf("HP-UX ABI\n");
 			break;
+		case ELFOSABI_NETBSD:
+			printf("UNIX - NetBSD\n");
+			break;
 		case ELFOSABI_STANDALONE:
 			printf("Standalone (embedded) application\n");
 			break;
