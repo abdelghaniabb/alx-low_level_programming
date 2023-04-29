@@ -86,7 +86,7 @@ int main(int argc, char **argv)
 	int fd = open(argv[1], O_RDONLY);
 	int i;
 	Elf64_Ehdr header;
-	char *char1, *char2;
+	char *char1, *char2, *c4;
 
 	if (argc != 2)
 		print_error("Usage: elf_header elf_filename");
@@ -97,28 +97,29 @@ int main(int argc, char **argv)
 	if (memcmp(header.e_ident, ELFMAG, SELFMAG) != 0)
 		print_error("Error: Not an ELF file");
 
-	printf("Magic: ");
+	printf("  Magic:   ");
 	for (i = 0; i < EI_NIDENT; i++)
 	{
 		printf("%02x ", header.e_ident[i]);
 	}
 	printf("\n");
 	char1 = "ELF64", char2 = "ELF32";
-	printf("Class: %s\n", header.e_ident[EI_CLASS] == ELFCLASS64 ? char1 : char2);
+	c4 = "  Class:                             ";
+	printf("%s%s\n", c4, header.e_ident[EI_CLASS] == ELFCLASS64 ? char1 : char2);
 	char1 = "2's complement, little endian", char2 = "2's complement, big endian";
-	printf("Data: %s\n", header.e_ident[EI_DATA] == ELFDATA2LSB ? char1 : char2);
-
-	printf("Version: %d\n", header.e_ident[EI_VERSION]);
-
-	printf("OS/ABI: ");
+	c4 = "  Data:                              ";
+	printf("%s%s\n", c4, header.e_ident[EI_DATA] == ELFDATA2LSB ? char1 : char2);
+	char1 = "  Version:                           ";
+	printf("%s%d (current)\n", char1, header.e_ident[EI_VERSION]);
+	printf("  OS/ABI:                            ");
 	switch1(&(header.e_ident[EI_OSABI]));
 
-	printf("ABI Version: %d\n", header.e_ident[EI_ABIVERSION]);
-
-	printf("Type: ");
+	char1 = "  ABI Version:                       ";
+	printf("%s%d\n", char1, header.e_ident[EI_ABIVERSION]);
+	printf("  Type:                              ");
 	switch2(&(header.e_type));
 
-	printf("Entry point address: 0x%lx\n", header.e_entry);
+	printf("  Entry point address:               0x%lx\n", header.e_entry);
 
 	close(fd);
 	return (0);
