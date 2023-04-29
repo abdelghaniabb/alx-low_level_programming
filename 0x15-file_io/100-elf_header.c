@@ -96,7 +96,7 @@ int main(int argc, char **argv)
 		print_error("Error: Cannot read ELF header");
 	if (memcmp(header.e_ident, ELFMAG, SELFMAG) != 0)
 		print_error("Error: Not an ELF file");
-
+	printf("ELF Header:\n");
 	printf("  Magic:   ");
 	for (i = 0; i < EI_NIDENT; i++)
 	{
