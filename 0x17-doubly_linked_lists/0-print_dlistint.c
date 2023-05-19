@@ -17,6 +17,7 @@ size_t print_dlistint(const dlistint_t *h)
 		return (0);
 	}
 
+	count = 0;
 	curent = malloc(sizeof(dlistint_t));
 	if (curent == NULL)
 	{
@@ -30,6 +31,8 @@ size_t print_dlistint(const dlistint_t *h)
 		curent = curent->next;
 		count++;
 	}
+
+
 
 	return (count);
 }
