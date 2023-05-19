@@ -2,7 +2,12 @@
 #include <string.h>
 #include <stdio.h>
 #include "lists.h"
-
+/**
+ * add_dnodeint -add a node to the list
+ * @head: the head of the list
+ * @n: the element to add
+ * Return: the adress of the new node
+ */
 dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 {
 	dlistint_t *new;
