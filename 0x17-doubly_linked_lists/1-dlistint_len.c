@@ -18,12 +18,6 @@ size_t dlistint_len(const dlistint_t *h)
 	}
 
 	count = 0;
-	curent = malloc(sizeof(dlistint_t));
-	if (curent == NULL)
-	{
-		return (EXIT_FAILURE);
-	}
-
 	curent = h;
 	while (curent)
 	{
