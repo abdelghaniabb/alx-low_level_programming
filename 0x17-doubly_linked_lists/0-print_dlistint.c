@@ -32,5 +32,5 @@ size_t print_dlistint(const dlistint_t *h)
 		down = down->prev;
 	}
 
-	return count;
+	return (count);
 }
