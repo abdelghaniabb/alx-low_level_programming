@@ -64,3 +64,6 @@ finish (100-argstostr.c)
 - 102-free_listint_safe.c
 - 103-find_loop.c
 
+
+# second chance 'c-12'
+## 0x17-doubly_linked_lists
