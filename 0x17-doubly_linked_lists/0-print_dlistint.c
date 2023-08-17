@@ -20,17 +20,17 @@ size_t print_dlistint(const dlistint_t *h)
 	down = h;
 	count = 0;
 
-	while (up->next != NULL)
+	while (up != NULL)
 	{
 		count++;
-		up = up->next;
 		printf("%i\n", up->n);
+		up = up->next;
 	}
-	while (down != NULL)
+	while (down->prev != NULL)
 	{
 		count++;
-		printf("%i\n", down->n);
 		down = down->prev;
+		printf("%i\n", down->n);
 	}
 
 	return (count);
