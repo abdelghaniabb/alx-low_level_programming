@@ -15,7 +15,7 @@ void times_table(void)
 		{
 			p = k * i;
 			printf("%i, ", p);
-			if (p < 10)
+			if (i * (k +  1) < 10)
 				printf(" ");
 		}
 		if (k == 9)
