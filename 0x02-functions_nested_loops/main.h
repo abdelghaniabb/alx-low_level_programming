@@ -8,6 +8,7 @@ int print_sign(int n);
 int _abs(int c);
 void jack_bauer(void);
 int add(int, int);
+int print_last_digit(int);
 
 /* Add prototypes for your other functions here */
 
