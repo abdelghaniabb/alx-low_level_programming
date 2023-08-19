@@ -9,7 +9,6 @@ int main(void)
 {
 	int i = 1, j = 2, p = 2;
 
-	printf("%i, ", i);
 	while (i < 4000000)
 	{
 		if (i != 1)
@@ -18,8 +17,7 @@ int main(void)
 		}
 		i = j + i;
 		j = p;
-		printf("%i, ", i);
-
 	}
+	printf("%i\n", i);
 	return (0);
 }
