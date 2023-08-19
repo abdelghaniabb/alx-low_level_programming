@@ -9,6 +9,7 @@ int _abs(int c);
 void jack_bauer(void);
 int add(int, int);
 int print_last_digit(int);
+void times_table(void);
 
 /* Add prototypes for your other functions here */
 
