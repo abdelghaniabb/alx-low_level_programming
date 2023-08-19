@@ -13,11 +13,13 @@ int main(void)
 	while (i < 4000000)
 	{
 		if (i != 1)
+		{
 			p = i;
+		}
 		i = j + i;
 		j = p;
 		printf("%i, ", i);
 
 	}
-
+	return (0);
 }
