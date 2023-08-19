@@ -19,6 +19,8 @@ void print_times_table(int n)
 				p = k * i;
 				printf("%i, ", p);
 				if (i * (k +  1) < 10)
+					printf("  ");
+				else if (i * (k +  1) < 100)
 					printf(" ");
 			}
 			if (k == n)
