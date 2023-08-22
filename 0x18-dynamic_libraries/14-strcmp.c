@@ -1,6 +1,7 @@
 #include "main.h"
+
 /**
- * _strcmp - copies a string
+ * _strcmp - compares two strings.
  * @s1: the destination string
  * @s2: the source string
  *

@@ -1,9 +1,14 @@
 #include "main.h"
+
 /**
- * _strpbrk - Entry point
- * @s: input
- * @accept: input
- * Return: Always 0 (Success)
+ * _strpbrk - searches a string for any of a set of bytes
+ * The _strpbrk() function locates the first occurrence in
+ * the string s of any of the bytes in the string accept
+ * @s: string to be scanned.
+ * @accept: string containing the characters to match.
+ *
+ * Return: pointer to the byte in s that matches one of the bytes in accept,
+ * or NULL if no such byte is found
  */
 char *_strpbrk(char *s, char *accept)
 {
@@ -14,10 +19,10 @@ char *_strpbrk(char *s, char *accept)
 	{
 		for (k = 0; accept[k]; k++)
 		{
-		if (*s == accept[k])
-		return (s);
+			if (*s == accept[k])
+				return (s);
 		}
-	s++;
+		s++;
 	}
 
 	return ('\0');

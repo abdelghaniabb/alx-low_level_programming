@@ -1,19 +1,17 @@
 #include "main.h"
-#include <stdio.h>
+
 /**
- * _isalpha - chek code
- * @c: integer
- * Return: 1 or 0
+ * _isalpha - 1-create_dynamic_lib.sh
+ * @c: the character to check
+ *
+ * Return: 1 if c is a letter, lowercase or uppercase, 0 otherwise
  */
 int _isalpha(int c)
 {
 	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
-	{
 		return (1);
-	}
+
 	else
-	{
 		return (0);
-	}
 }
 

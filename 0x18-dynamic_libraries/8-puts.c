@@ -1,10 +1,11 @@
 #include "main.h"
 #include <stdio.h>
+
 /**
- * _puts - print string
+ * _puts - prints a string, followed by a new line, to stdout.
+ * @s: string
  *
  * Return: always 0 .
- * @s: string
  */
 void _puts(char *s)
 {
