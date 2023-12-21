@@ -6,13 +6,11 @@ NAME = school
 all : $(NAME)
 
 %.o : %.c
-	$(CC) -o $@ -c $<
+	$(CC) -c $< -o $@
 
 $(NAME) : $(OBJ)
-	$(CC) -o $@ $^
+	$(CC) $^ -o $@
 
 clean :
 	rm -f $(OBJ) $(NAME)
-
-.PHONY: all clean
 
